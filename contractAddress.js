@@ -1,0 +1,1 @@
+export const FreelanceContractAddress = '0x5AACF918FE591f6C05C65e15642156CF16201778';
