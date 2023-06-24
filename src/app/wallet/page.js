@@ -3,7 +3,7 @@ import { ParticleNetwork } from "@particle-network/auth";
 import { useState } from "react";
 import { ParticleProvider } from "@particle-network/provider";
 let isLoggedIn = false; // Declare the initial value of isLoggedIn outside the component
-
+export const loginInfo = {};
 const LoginComp = () => {
     const [loggedIn, setLoggedIn] = useState(false);
 
@@ -19,25 +19,64 @@ const LoginComp = () => {
                     appId: "d8f8e461-42ae-4601-a3a5-550a4002c2bf",
                     chainName: "Ethereum", //optional: current chain name, default Ethereum.
                     chainId: 1,
+                    wallet: {   //optional: by default, the wallet entry is displayed in the bottom right corner of the webpage.
+                        displayWalletEntry: true,  //show wallet entry when connect particle.
+                        // defaultWalletEntryPosition: WalletEntryPosition.BR, //wallet entry position
+                        uiMode: "light",  //optional: light or dark, if not set, the default is the same as web auth.
+                        supportChains: [{ id: 1, name: "Ethereum" }, { id: 5, name: "Ethereum" }], // optional: web wallet support chains.
+                        //optional: custom wallet style
+                    },
 
                 });
 
-                const userInfo = await particle.auth.login();
+                const userInfo = await particle.auth.login({
+                    preferredAuthType: 'phone',
+                });
+
+                if (userInfo.email) {
+                    loginInfo.email = userInfo.email;
+                    alert('You logged in with your email: ' + userInfo.email);
+                } else if (userInfo.phone) {
+                    loginInfo.phone = userInfo.phone
+                    alert('You logged in with your phone number: ' + userInfo.phone);
+                } else if (userInfo.google_email) {
+                    loginInfo.google_email = userInfo.google_email
+                    alert('You logged in with your gmail: ' + userInfo.google_email);
+                } else if (userInfo.apple_email) {
+                    loginInfo.apple_email = userInfo.apple_email
+                    alert('You logged in with your apple: ' + userInfo.apple_email);
+                } else if (userInfo.discord_email) {
+                    loginInfo.discord_email = userInfo.discord_email
+                    alert('You logged in with your discord: ' + userInfo.discord_email);
+                } else if (userInfo.twitch_email) {
+                    loginInfo.twitch_email = userInfo.twitch_email
+                    alert('You logged in with your twitch: ' + userInfo.twitch_email);
+                } else if (userInfo.linkedin_email) {
+                    loginInfo.linkedin_email = userInfo.linkedin_email
+                    alert('You logged in with your linkedin: ' + userInfo.linkedin_email);
+                } else if (userInfo.facebook_email) {
+                    loginInfo.facebook_email = userInfo.facebook_email
+                    alert('You logged in with your facebook: ' + userInfo.facebook_email);
+                } else if (userInfo.twitter_email) {
+                    loginInfo.twitter_email = userInfo.twitter_email
+                    alert('You logged in with your twitter: ' + userInfo.twitter_email);
+                } else {
+                    loginInfo.github_email = userInfo.github_email
+                    alert('You logged in with your github: ' + userInfo.github_email);
+                }
 
                 // Handle the user information, including Ethereum wallet addresses
                 const particleProvider = new ParticleProvider(particle.auth);
                 const accounts = await particleProvider.request({ method: 'eth_accounts' });
-                // alert("Provider" + particleProvider)
-                alert("Acc" + accounts)
-                // Need check login state when open wallet.
-                // To set target and features for custom window style, same as window.open().
-                const wallet = particle.openWallet()
-                alert(wallet)
+                alert(accounts + "is your account")
+                loginInfo.accounts = accounts
 
 
 
                 setLoggedIn(true);
+
                 isLoggedIn = true; // Update the value of isLoggedIn
+
             }
         } catch (error) {
             alert("Error during login:", error);
@@ -70,6 +109,7 @@ const LoginComp = () => {
         </div>
     );
 };
+
 export const sendWalletAddress = (wallet) => wallet
 export const getIsLoggedIn = () => isLoggedIn; // Export the getter function
 export default LoginComp;

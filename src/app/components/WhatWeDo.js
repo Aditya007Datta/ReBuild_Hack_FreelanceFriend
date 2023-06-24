@@ -1,37 +1,71 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
+"use client"
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import dallEphoto from "public/d.png";
 
 const WhatWeDo = () => {
     return (
-        <div className="bg-gradient-to-r from-red-600 via-white to-white py-6 sm:py-8 lg:py-12">
+        <div className="py-6 sm:py-8 lg:py-12">
             <div className="mx-auto max-w-screen-xl px-4 md:px-8">
                 <div className="grid gap-8 md:grid-cols-2 lg:gap-12">
                     <div>
                         <div className="h-64 overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-auto">
-                            <Image src="" loading="lazy" height={500} width={500} alt="Photo by Martin Sanchez" className="h-full w-full object-cover object-center" />
+                            <Image
+                                src={dallEphoto}
+                                loading="lazy"
+                                height={500}
+                                width={500}
+                                alt="Photo by Martin Sanchez"
+                                className="h-full w-full object-cover object-center"
+                            />
                         </div>
                     </div>
 
                     <div className="md:pt-8">
-                        <p className="text-center font-bold text-indigo-500 md:text-left">Who we are</p>
+                        <h2
+                            className="mb-2 text-center text-3xl font-semibold text-yellow-200 sm:text-2xl md:mb-4 md:text-center" style={{ textShadow: "0 0 5px #FFFFFF", color: "#FFD700" }}
+                        >
+                            About us
+                        </h2>
 
-                        <h1 className="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6 md:text-left">Our competitive advantage</h1>
 
-                        <p className="mb-6 text-gray-500 sm:text-lg md:mb-8">
-                            This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text but is random or otherwise generated. It may be used to display a sample of fonts or generate text for testing. Filler text is dummy text which has no meaning however looks very similar to real text.<br /><br />
 
-                            This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text but is <Link href="#" className="text-indigo-500 underline transition duration-100 hover:text-indigo-600 active:text-indigo-700">random</Link> or otherwise generated. It may be used to display a sample of fonts or generate text for testing. Filler text is dummy text which has no meaning however looks very similar to real text.
+                        <h2
+                            className="mb-2 text-center text-xl font-semibold text-gray-800 sm:text-2xl md:mb-4 md:text-left"
+                            style={{ textShadow: "0 0 5px #FFFFFF", color: "#F8F8F8" }}
+                        >
+                            What We Do
+                        </h2>
+
+                        <p className="mb-6 text-slate-200 sm:text-lg md:mb-8">
+                            Introducing our innovative web application that empowers users to
+                            showcase their diverse talents and creations! Our platform enables
+                            individuals to upload and exhibit their content writing, coding
+                            projects, music samples, and video edits. With the added benefit
+                            of earning crypto coins, users can gain recognition for their work
+                            while exploring exciting opportunities in the digital landscape.
+                            Start sharing your creations and unlocking your potential today!
                         </p>
 
-                        <h2 className="mb-2 text-center text-xl font-semibold text-gray-800 sm:text-2xl md:mb-4 md:text-left">About us</h2>
+                        <h2
+                            className="mb-2 text-center text-xl font-semibold text-gray-800 sm:text-2xl md:mb-4 md:text-left"
+                            style={{ textShadow: "0 0 5px #FFFFFF", color: "#F8F8F8" }}
+                        >
+                            About us
+                        </h2>
 
-                        <p className="mb-6 text-gray-500 sm:text-lg md:mb-8">This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text but is random or otherwise generated. It may be used to display a sample of fonts or generate text for testing. Filler text is dummy text which has no meaning however looks very similar to real text.</p>
+                        <p className="mb-6 text-slate-200 sm:text-lg md:mb-8">
+                            Our team consists of passionate developers, always eager to learn
+                            and ride the new waves of technology.As a dynamic group of tech
+                            enthusiasts, we are dedicated to pushing the boundaries of
+                            innovation.
+                        </p>
                     </div>
                 </div>
             </div>
-        </div>
-    )
-}
+        </div >
+    );
+};
 
-export default WhatWeDo
+export default WhatWeDo;

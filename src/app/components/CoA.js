@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
@@ -22,7 +23,8 @@ const CoA = ({ imageUrl, text }) => {
 
           <!-- image - start --> */}
                     <div className="order-first h-48 w-full bg-gray-700 sm:order-none sm:h-auto sm:w-1/2 lg:w-3/5">
-                        <img src={imageUrl} loading="lazy" alt="Photo by Dom Hill" className="h-full w-full object-cover object-center" />
+                        <Image src={imageUrl} height={300} width={300} loading="lazy" alt="Photo by Dom Hill" className="h-full w-full object-cover object-center" />
+
                     </div>
                     {/* <!-- image - end --> */}
                 </div>

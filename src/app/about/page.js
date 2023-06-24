@@ -1,11 +1,13 @@
 import React from 'react'
 import WhatWeDo from '../components/WhatWeDo'
-import MyComponent from '../components/Demo'
+import IPFSUploadComponent from '../components/IPFS'
+
 
 const page = () => {
     return (
         // <WhatWeDo />
-        <MyComponent />
+        // <WhatWeDo />
+        <IPFSUploadComponent />
     )
 }
 
