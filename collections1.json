@@ -1,19 +1,97 @@
 [
   {
-    "projectUrl": "https://github.com/ighoshsubho",
-    "imageUrl": "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&q=75&fit=crop&crop=top&w=600&h=700",
-    "walletAddress": "0x123456789abcdef"
+    "Name": "rohit.choudhury@gmail.com",
+    "projectUrl": "https://ipfs.particle.network/bafybeiemxsktm4ehclenfoucv5riz7gcw4z6ww5eby452mzh5c636gglpm",
+    "imageUrl": "https://ipfs.particle.network/bafybeigh2etn5r5u5bzvpolb6cd7fz7swvv7ga33wvtzqc5u23hflyb7w4",
+    "Account": ["0x258277DAc9a58eC8eCc2f855aC3990f4f2C99Eb6"],
+    "name_of_client": "Rohit",
+    "surname": "Choudhury",
+    "desc": "Rohit is a skilled UI/UX designer with 5 years of professional experience. He possesses a deep understanding of user-centered design principles and is adept at translating complex requirements into elegant and user-friendly solutions. Through his expertise in wireframing, prototyping, and user research, Rohit consistently delivers designs that enhance usability and leave a lasting impression. With his strong attention to detail and creative mindset, Rohit brings a unique perspective to every project, ensuring optimal user engagement and satisfaction.",
+    "role": "UI-UX designer"
   },
   {
-    "projectUrl": "www.meghnalovessubho.com",
-    "imageUrl": "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&q=75&fit=crop&crop=top&w=600&h=700"
+    "Name": "john.doe@gmail.com",
+    "projectUrl": "https://gmail.com/project1",
+    "imageUrl": "https://ipfs.particle.network/bafybeidij4mqbh7hqcyr6k75pz3d5kqpqz7bgt5vaov6lkdsqbrbhpfydq",
+    "Account": ["0x1234567890abcdef"],
+    "name_of_client": "John",
+    "surname": "Doe",
+    "desc": "John is a talented web developer with a passion for creating interactive and visually appealing websites. With expertise in HTML, CSS, and JavaScript, he develops responsive and user-friendly web solutions. John's problem-solving skills and attention to detail enable him to deliver high-quality code and exceptional user experiences.",
+    "role": "Web Developer"
   },
   {
-    "projectUrl": "www.rohit.com",
-    "imageUrl": "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&q=75&fit=crop&crop=top&w=600&h=700"
+    "Name": "mary.smith@gmail.com",
+    "projectUrl": "https://gmail.com/project2",
+    "imageUrl": "https://ipfs.particle.network/bafybeicler3t2fouuaqczpjrv26dqwvhopvew63g5ttky5k7aolsdqcice",
+    "Account": ["0x234567890abcdef"],
+    "name_of_client": "Mary",
+    "surname": "Smith",
+    "desc": "Mary is a talented graphic designer with a flair for creating visually stunning and impactful designs. With expertise in Adobe Creative Suite and a strong sense of aesthetics, she transforms concepts into compelling visual representations. Mary's creativity and attention to detail enable her to deliver designs that captivate and engage audiences.",
+    "role": "Graphic Designer"
   },
   {
-    "projectUrl": "abc.com",
-    "imageUrl": "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&q=75&fit=crop&crop=top&w=600&h=700"
-  }
+    "Name": "alex.johnson@gmail.com",
+    "projectUrl": "https://gmail.com/project3",
+    "imageUrl": "https://ipfs.particle.network/bafybeicewdct7x5fxs3xovpoisltoi6yv5hzlpgczi7hnau4l3ddmgnl3e",
+    "Account": ["0x34567890abcdef"],
+    "name_of_client": "Alex",
+    "surname": "Johnson",
+    "desc": "Alex is a skilled mobile app developer with a passion for creating innovative and user-friendly mobile experiences. With expertise in iOS and Android development, he turns ideas into functional and intuitive mobile applications. Alex's problem-solving skills and attention to detail enable him to deliver high-quality apps that meet client requirements and exceed user expectations.",
+    "role": "Mobile App Developer"
+  },
+  
+    {
+      "Name": "john.doe@gmail.com",
+      "projectUrl": "https://gmail.com/project1",
+      "imageUrl": "https://ipfs.particle.network/bafybeigh2etn5r5u5bzvpolb6cd7fz7swvv7ga33wvtzqc5u23hflyb7w4",
+      "Account": ["0x1234567890abcdef"],
+      "name_of_client": "John",
+      "surname": "Doe",
+      "desc": "John is a skilled developer with a passion for building robust and scalable web applications. With expertise in various programming languages and frameworks, he develops efficient code and implements best practices. John's problem-solving skills and attention to detail contribute to the success of software projects.",
+      "role": "Developer"
+    },
+    {
+      "Name": "jane.smith@gmail.com",
+      "projectUrl": "https://gmail.com/project2",
+      "imageUrl": "https://ipfs.particle.network/bafybeidij4mqbh7hqcyr6k75pz3d5kqpqz7bgt5vaov6lkdsqbrbhpfydq",
+      "Account": ["0x234567890abcdef1"],
+      "name_of_client": "Jane",
+      "surname": "Smith",
+      "desc": "Jane is a talented coder with a deep understanding of programming concepts and algorithms. With expertise in multiple programming languages, she develops efficient and optimized code solutions. Jane's logical thinking and attention to detail contribute to the success of coding projects.",
+      "role": "Coder"
+    },
+    {
+      "Name": "michael.johnson@gmail.com",
+      "projectUrl": "https://gmail.com/project3",
+      "imageUrl": "https://ipfs.particle.network/bafybeicler3t2fouuaqczpjrv26dqwvhopvew63g5ttky5k7aolsdqcice",
+      "Account": ["0x34567890abcdef12"],
+      "name_of_client": "Michael",
+      "surname": "Johnson",
+      "desc": "Michael is a creative comic artist with a flair for storytelling and visual narratives. With expertise in character design and panel layouts, he brings comic stories to life. Michael's imagination and artistic skills contribute to the creation of captivating and engaging comic artwork.",
+      "role": "Comic Artist"
+    },
+    {
+      "Name": "sarah.davis@gmail.com",
+      "projectUrl": "https://gmail.com/project4",
+      "imageUrl": "https://ipfs.particle.network/bafybeicewdct7x5fxs3xovpoisltoi6yv5hzlpgczi7hnau4l3ddmgnl3e",
+      "Account": ["0x4567890abcdef23"],
+      "name_of_client": "Sarah",
+      "surname": "Davis",
+      "desc": "Sarah is a talented music composer with a passion for creating immersive and captivating soundscapes. With expertise in music theory and composition techniques, she composes music that evokes emotions and enhances storytelling. Sarah's creativity and musicality contribute to the creation of memorable music compositions.",
+      "role": "Music Composer"
+    },
+    {
+      "Name": "alex.wilson@gmail.com",
+      "projectUrl": "https://gmail.com/project5",
+      "imageUrl": "https://ipfs.particle.network/bafybeigh2etn5r5u5bzvpolb6cd7fz7swvv7ga33wvtzqc5u23hflyb7w4",
+      "Account": ["0x567890abcdef234"],
+      "name_of_client": "Alex",
+      "surname": "Wilson",
+      "desc": "Alex is a talented designer with a strong eye for aesthetics and a passion for creating visually appealing designs. With expertise in design tools and principles, he crafts designs that communicate effectively and leave a lasting impression. Alex's attention to detail and creativity contribute to the success of design projects.",
+      "role": "Designer"
+    }
+  
+  
 ]
+
+

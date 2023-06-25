@@ -8,10 +8,9 @@ import Gallery from "./Gallery";
 const Projects = () => {
     const handleLinkClick = (e) => {
         if (!getIsLoggedIn()) {
-            e.preventDefault(); // Prevent the link from navigating if not logged in
-            // Redirect to login page
-            // You can replace "/login" with your actual login page route
-            // For example: router.push("/login");
+            e.preventDefault(); // Prevents the link from navigating if not logged in
+            // Redirects to login page
+
             alert("Please login first")
         }
     };
@@ -20,7 +19,7 @@ const Projects = () => {
         <div className=" py-6 sm:py-8 lg:py-12">
             <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
                 <div className="mb-6 flex items-end justify-between gap-4">
-                    <h2 className="text-2xl font-bold text-gray-800 lg:text-3xl">Selected</h2>
+                    <h2 className="text-2xl font-bold text-slate-100 lg:text-3xl">Featured</h2>
 
                     <Link
                         href="/collections"
@@ -35,6 +34,8 @@ const Projects = () => {
                     {projectsToShow.map((project, index) => (
                         <Gallery
                             key={index}
+                            role={project.role}
+                            name={project.name_of_clients}
                             projectUrl={project.projectUrl}
                             imageUrl={project.imageUrl}
                             walletAddress={project.walletAddress}

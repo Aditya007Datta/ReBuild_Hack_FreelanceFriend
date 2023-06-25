@@ -15,13 +15,18 @@ app.use(cors(corsOptions));
 // Endpoint to handle form submissions
 app.post('/submitForm', (req, res) => {
 
-    const { Name, Account, projectUrl } = req.body;
+    const { Name, Account, projectUrl, imageUrl, name_of_client, surname, desc, role } = req.body;
+
     // Append the form data to the JSON file
     const data = {
         Name,
         projectUrl,
-        imageUrl: "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&q=75&fit=crop&crop=top&w=600&h=700",
-        Account
+        imageUrl,
+        Account,
+        name_of_client,
+        surname,
+        desc,
+        role
     };
 
     // Path to your JSON file
@@ -45,6 +50,7 @@ app.post('/submitForm', (req, res) => {
         }
 
         jsonData.push(data);
+        console.log(data)
         const updatedData = JSON.stringify(jsonData, null, 2);
 
         fs.writeFile(filePath, updatedData, 'utf8', (writeError) => {

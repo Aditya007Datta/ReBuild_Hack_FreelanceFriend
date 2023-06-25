@@ -25,3 +25,7 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+.glow-text-dark {
+  text-shadow: 0 0 8px rgb(255, 255, 253);
+  color: #22065a;
+}

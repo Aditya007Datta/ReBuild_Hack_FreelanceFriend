@@ -35,40 +35,40 @@ const LoginComp = () => {
 
                 if (userInfo.email) {
                     loginInfo.email = userInfo.email;
-                    alert('You logged in with your email: ' + userInfo.email);
+
                 } else if (userInfo.phone) {
                     loginInfo.phone = userInfo.phone
-                    alert('You logged in with your phone number: ' + userInfo.phone);
+
                 } else if (userInfo.google_email) {
                     loginInfo.google_email = userInfo.google_email
-                    alert('You logged in with your gmail: ' + userInfo.google_email);
+
                 } else if (userInfo.apple_email) {
                     loginInfo.apple_email = userInfo.apple_email
-                    alert('You logged in with your apple: ' + userInfo.apple_email);
+
                 } else if (userInfo.discord_email) {
                     loginInfo.discord_email = userInfo.discord_email
-                    alert('You logged in with your discord: ' + userInfo.discord_email);
+
                 } else if (userInfo.twitch_email) {
                     loginInfo.twitch_email = userInfo.twitch_email
-                    alert('You logged in with your twitch: ' + userInfo.twitch_email);
+
                 } else if (userInfo.linkedin_email) {
                     loginInfo.linkedin_email = userInfo.linkedin_email
-                    alert('You logged in with your linkedin: ' + userInfo.linkedin_email);
+
                 } else if (userInfo.facebook_email) {
                     loginInfo.facebook_email = userInfo.facebook_email
-                    alert('You logged in with your facebook: ' + userInfo.facebook_email);
+
                 } else if (userInfo.twitter_email) {
                     loginInfo.twitter_email = userInfo.twitter_email
-                    alert('You logged in with your twitter: ' + userInfo.twitter_email);
+
                 } else {
                     loginInfo.github_email = userInfo.github_email
-                    alert('You logged in with your github: ' + userInfo.github_email);
+
                 }
 
                 // Handle the user information, including Ethereum wallet addresses
                 const particleProvider = new ParticleProvider(particle.auth);
                 const accounts = await particleProvider.request({ method: 'eth_accounts' });
-                alert(accounts + "is your account")
+
                 loginInfo.accounts = accounts
 
 
@@ -79,7 +79,7 @@ const LoginComp = () => {
 
             }
         } catch (error) {
-            alert("Error during login:", error);
+            alert("Error during login:( Try Again", error);
         }
     };
 

@@ -27,7 +27,7 @@ const IPFSUploadComponent = () => {
             });
 
             const cid = response.data.cid;
-            alert(`Successfully uploaded. CID: ${cid}`);
+            alert(`Successfully uploaded. CID: https://ipfs.particle.network/${cid}`);
         } catch (error) {
             alert('Upload failed.');
             console.error(error);
@@ -35,9 +35,9 @@ const IPFSUploadComponent = () => {
     };
 
     return (
-        <div>
+        <div className='flex flex-col'>
             <input type="file" onChange={handleFileInputChange} />
-            <button onClick={handleFileUpload}>Upload to IPFS</button>
+            <button className="bg-black " onClick={handleFileUpload}>Upload to IPFS</button>
         </div>
     );
 };

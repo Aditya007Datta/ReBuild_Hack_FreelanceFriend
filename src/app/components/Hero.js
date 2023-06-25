@@ -13,11 +13,11 @@ const Hero = () => {
                     <div className="mb-6 flex w-full flex-col justify-center sm:mb-12 lg:mb-0 lg:w-1/3 lg:pt-48 lg:pb-24">
                         <div className="bg-white py-6 sm:py-8 lg:py-12">
                             <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
-                                <p className="mb-2 font-semibold text-indigo-500 md:mb-3 lg:text-lg">Introducing</p>
+                                <p className="mb-2 font-semibold text-indigo-500 md:mb-3 lg:text-lg">Introducing </p>
 
-                                <h2 className="mb-4 text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">Revolutionary way to hire!</h2>
+                                <h2 className="mb-4 text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">KazeVault</h2>
 
-                                <p className="max-w-screen-md text-gray-500 md:text-lg">This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text but is random or otherwise generated.</p>
+                                <p className="max-w-screen-md text-gray-500 md:text-lg">a platform that empowers creators, showcases brilliance, and amplifies voices through shared art.</p>
 
                             </div>
                         </div>
@@ -40,22 +40,22 @@ const Hero = () => {
                 <div className=" flex flex-col items-center justify-between gap-8 md:flex-row">
                     <div className="bg-white flex h-12 w-64 divide-x overflow-hidden rounded-lg border">
                         <Link
-                            href="/about"
-                            className="flex w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200"
-                        >
-                            Client
-                        </Link>
-                        <Link
                             href="/collections"
                             className="flex w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200"
                         >
-                            Work
+                            Works
                         </Link>
                         <Link
-                            href="/register"
+                            href="/form"
                             className="flex w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200"
                         >
-                            Reviews
+                            Form
+                        </Link>
+                        <Link
+                            href="/doc"
+                            className="flex w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200"
+                        >
+                            Docs
                         </Link>
                     </div>
 
