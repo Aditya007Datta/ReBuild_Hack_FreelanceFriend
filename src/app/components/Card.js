@@ -15,7 +15,7 @@ const Card = (props) => {
 
 
     return (
-        <div href="{props.projectUrl}" className="group relative flex h-48 items-end justify-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-96">
+        <div  className="group relative flex h-48 items-end justify-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-96">
             <img
                 src={props.imageUrl}
                 loading="lazy"
@@ -115,7 +115,9 @@ const Card = (props) => {
                                         <span className="mb-3 py-2  inline-block text-sm font-semibold text-gray-500 md:text-base">
                                             Particle Wallet Address: {props.walletAddress}
                                         </span>
-
+                                         <Link href="{props.projectUrl}" className="mb-3 py-2  inline-block text-sm font-semibold text-gray-500 md:text-base">
+                                            Project Link: {props.projectUrl}
+                                        </Link>
 
                                     </div>
 
