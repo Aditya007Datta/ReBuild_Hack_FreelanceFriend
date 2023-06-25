@@ -127,7 +127,7 @@ const Card = (props) => {
                                         </div>
 
                                         <span className="text-sm text-gray-500">
-                                            role
+                                            Skills/Role
                                         </span>
                                     </div>
 
@@ -165,7 +165,7 @@ const Card = (props) => {
                                                 alert(`Contact ${name} is copied!`);
                                             }}
                                         >
-                                            Contact Him!
+                                            Contact Me!
                                         </a>
 
                                     </div>
