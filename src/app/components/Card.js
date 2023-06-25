@@ -115,7 +115,7 @@ const Card = (props) => {
                                         <span className="mb-3 py-2  inline-block text-sm font-semibold text-gray-500 md:text-base">
                                             Particle Wallet Address: {props.walletAddress}
                                         </span>
-                                         <Link href="{props.projectUrl}" className="mb-3 py-2  inline-block text-sm font-semibold text-gray-500 md:text-base">
+                                         <Link href={props.projectUrl} className="mb-3 py-2  inline-block text-sm font-semibold text-gray-500 md:text-base">
                                             Click to view project!
                                         </Link>
 
