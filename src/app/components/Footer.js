@@ -43,7 +43,7 @@ const Footer = () => {
 
                 </div>
 
-                <div className="py-8 text-center text-sm text-gray-400">© 2023 - Present KazeVault. All rights reserved.</div>
+                <div className="py-8 text-center text-sm text-gray-400">© 2024 - Present KazeVault. All rights reserved.</div>
             </footer>
         </div>
     )
